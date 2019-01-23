@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* Simplify width and height calculations */
+html{
+	box-sizing: border-box;}
+	*, *:before,
+	*:after {
+		box-sizing: inherit;     
+	}
+body {
+    margin: 0;
+    color: #4B4B4B;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: white;
+}
+h1, h2 {
+    color: #1e1e1e;
+    font-style: normal;
+    font-weight: 400;
+}
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+#wrapper main #milva {
+}
+
+h2 {
+    margin-top: 0.5em;
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+a:link {
+    color: #F68979;
+}
+a:visited {
+    color: #FF944C;
+}
+a:hover, a:active, a:focus {
+    color: #7F3300;
+    text-decoration: underline;
+}
+#menulink {
+    margin: 0;
+    text-align: center;
+    background-color: #1E1E1E;
+}
+#menulink a {
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+#navlinks {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    background-color: #000000;
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    -webkit-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s;
+}
+#navlinks.displayed {
+    top: 135px;
+    z-index: 1;
+    opacity: 1;
+}
+#navlinks.start {
+    display: none;
+}
+#navlinks.collapsed {
+    top: -12em;
+    opacity: 0;
+}
+
+
+
+#navlinks a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#navlinks a:hover, #navlinks a:active, #navlinks a:focus {
+    color: #F68979;
+}
+
+#cover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hero {
+    padding-top: 2em;
+}
+
+
+main, aside {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+#wrapper #hero a {
+    margin: auto;
+    padding-top: 0PX;
+}
+#milva   {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sophia {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #1E1E1E;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    background-image: url(../images/PIA15417-orig.creditNASA.jpg);
+}
+@media (min-width: 700px){
+#menulink {
+    display: none;
+}
+#navlinks {
+    max-width: 1000px;
+    position: static;
+    background-color: transparent;
+}
+#navlinks.collapsed {
+    opacity: 1;
+}
+#navlinks a {
+    width: 25%;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+    color: #1e1e1e;
+}
